@@ -1,37 +1,61 @@
-Awake is a Nuxt.js template for generating a beautifully robust static site with blog. 
+# [Vuelog](https://vuelog.js.org/)
 
-# Features
+[![ES2015+](https://img.shields.io/badge/es-2015+-ff69b4.svg)](https://kangax.github.io/compat-table/es6/)
+[![CircleCI](https://img.shields.io/circleci/project/myst729/Vuelog/master.svg)](https://circleci.com/gh/myst729/Vuelog/tree/master)
+[![Codecov](https://img.shields.io/codecov/c/github/myst729/Vuelog/master.svg)](https://codecov.io/github/myst729/Vuelog)
+[![Release](https://img.shields.io/github/release/myst729/Vuelog.svg)](https://github.com/myst729/Vuelog/releases/latest)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/myst729/Vuelog/blob/master/LICENSE)
 
-* Simple modern design based on the Bulma css framework (with unused css purged via [purgecss](https://www.purgecss.com/))
-* Site search
-* Statically generated API for posts and categories
-* Disqus powered comments
-* Mailchimp powered newsletter
-* Highly customizable with out of the box configurations
-* Built with performance in mind
-* Isolated Netlify CMS driver (with more CMS drivers planned for future) for easily migrating between various headless cms'
-* Images automatically resized for various screens and given srcsets
+> A backend-free blog system built on top of Vue.js
 
-# Use Awake on Netlify
-Simply click the "Deploy to Netlify" button and then configure it to fit your needs as described below.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danielkellyio/awake-template)
+## Browsers Support
 
-# Configuration
+| <img src="https://myst729.github.io/assets/browsers/chrome_256x256.png" alt="Chrome" width="96" height="96"><br>Chrome | <img src="https://myst729.github.io/assets/browsers/edge_256x256.png" alt="Edge" width="96" height="96"><br>Edge | <img src="https://myst729.github.io/assets/browsers/firefox_256x256.png" alt="Firefox" width="96" height="96"><br>Firefox | <img src="https://myst729.github.io/assets/browsers/opera_256x256.png" alt="Opera" width="96" height="96"><br>Opera | <img src="https://myst729.github.io/assets/browsers/safari_256x256.png" alt="Safari" width="96" height="96"><br>Safari | <img src="https://myst729.github.io/assets/browsers/internet-explorer_256x256.png" alt="Internet Explorer" width="96" height="96"><br>Internet Explorer |
+| :------: | :------: | :------: | :------: | :------: | :--: |
+| Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11 ✘ |
 
-Site configuration is found in `/config/_siteConfig.js`. Here you can customize site settings such as the site name, layout, disqus and mailchimp setup, image sizes and more. Any of these can be setup to use environment variables if you so desire, in order to be able to configure them directly from the Netlify interface. See the setup for google analytics which already uses an environment variable as an example of this.
 
+## Project setup
 ```
-googleAnalytics: {
-    on: true,
-    id: process.env.GOOGLE_ANALYTICS_ID
-},
+npm install
 ```
 
-# Editing Content
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-Posts and categories can be edited in Netlify CMS at \[your-site-url]/admin. At this time any new pages must be created in the code itself and committed to the repo. Before you visit the admin for the first time, make sure you have [Netlify Identity](https://www.netlify.com/docs/identity/) setup with your user and make sure "Git Gateway" is enabled via the Identity Settings page in the Netlify admin. 
+### Compiles and minifies for production
+```
+npm run build
+```
 
-# Local Development
+### Lints and fixes files
+```
+npm run lint
+```
 
-Since all content is store in the git repo with Netlify CMS, local development is a breeze. Simply install node, pull down the repo, install the dependencies with `npm install`, and run `npm run dev`.
+### Run your unit tests
+```
+npm run unit
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## Documentation
+
+https://vuelog.js.org/
+
+
+## Changelog
+
+https://vuelog.js.org/#/page/changelog/
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2016-2019 [Leo Deng](https://myst729.github.io/)
